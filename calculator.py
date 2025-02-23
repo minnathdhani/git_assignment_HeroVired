@@ -25,20 +25,18 @@ class Calculator:
 
 if __name__ == "__main__":
     calculator = Calculator()
-  try:
-     num1 = 16
-     num2 = 4
+    try:
+      num1 = float(input("Enter first number: "))
+      num2 = float(input("Enter second number: "))
+      num3 = float(input("Enter a number to find its square root: "))	
 
-     print(f"{num1} + {num2} = {calculator.add(num1, num2)}")
-     print(f"{num1} - {num2} = {calculator.subtract(num1, num2)}")
-     print(f"{num1} * {num2} = {calculator.multiply(num1, num2)}")
-     print(f"{num1} / {num2} = {calculator.divide(num1, num2)}")
+      print(f"{num1} + {num2} = {calculator.add(num1, num2)}")
+      print(f"{num1} - {num2} = {calculator.subtract(num1, num2)}")
+      print(f"{num1} * {num2} = {calculator.multiply(num1, num2)}")
+      print(f"{num1} / {num2} = {calculator.divide(num1, num2)}")
+      print(f"The square root of {num3} = {calculator.square_root(num3)}")
 
-    # TODO: Uncomment and test the square root feature.
-     num3 = 25
-     print(f"The square root of {num3} = {calculator.square_root(num3)}")
-
-   except ValueError as e:
+    except ValueError as e:
         print(f"Invalid input: {e}")
-   except Exception as e:
+    except Exception as e:
         print(f"An error occurred: {e}")
