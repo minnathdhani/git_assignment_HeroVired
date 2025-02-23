@@ -12,8 +12,13 @@ class Calculator:
         return a * b
 
     def divide(self, a, b):
+<<<<<<< HEAD
 	if b == 0:
            raise ValueError("Cannot divide by zero.")
+=======
+         if b == 0:
+            raise ValueError("Cannot divide by zero.")
+>>>>>>> 19b836bf739c781877dde9a8cc68051651302d53
         return a / b
 
     # TODO: Implement the following function to calculate the square root of a number.
