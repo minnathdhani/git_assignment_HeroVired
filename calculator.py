@@ -12,31 +12,33 @@ class Calculator:
         return a * b
 
     def divide(self, a, b):
-<<<<<<< HEAD
-	if b == 0:
+        if b == 0:
            raise ValueError("Cannot divide by zero.")
-=======
-         if b == 0:
-            raise ValueError("Cannot divide by zero.")
->>>>>>> 19b836bf739c781877dde9a8cc68051651302d53
+
         return a / b
 
     # TODO: Implement the following function to calculate the square root of a number.
     def square_root(self, x):
-         return math.sqrt(x)
+	if x < 0:
+            raise ValueError("Cannot calculate the square root of a negative number.")
+        return math.sqrt(x)
 
 if __name__ == "__main__":
     calculator = Calculator()
+  try:
+     num1 = 16
+     num2 = 4
 
-    num1 = 16
-    num2 = 4
-
-    print(f"{num1} + {num2} = {calculator.add(num1, num2)}")
-    print(f"{num1} - {num2} = {calculator.subtract(num1, num2)}")
-    print(f"{num1} * {num2} = {calculator.multiply(num1, num2)}")
-    print(f"{num1} / {num2} = {calculator.divide(num1, num2)}")
+     print(f"{num1} + {num2} = {calculator.add(num1, num2)}")
+     print(f"{num1} - {num2} = {calculator.subtract(num1, num2)}")
+     print(f"{num1} * {num2} = {calculator.multiply(num1, num2)}")
+     print(f"{num1} / {num2} = {calculator.divide(num1, num2)}")
 
     # TODO: Uncomment and test the square root feature.
-    num3 = 25
-    print(f"The square root of {num3} = {calculator.square_root(num3)}")
+     num3 = 25
+     print(f"The square root of {num3} = {calculator.square_root(num3)}")
 
+   except ValueError as e:
+        print(f"Invalid input: {e}")
+   except Exception as e:
+        print(f"An error occurred: {e}")
