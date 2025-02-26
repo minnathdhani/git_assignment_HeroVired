@@ -101,7 +101,12 @@ git push origin lfs
 
 - Merge the `lfs` branch into `main` when ready.
 
----
+## Output Pics:
+
+- ![pic-git-assignment](https://github.com/user-attachments/assets/72ce3c00-6467-407c-9c06-79bfcb875ee6)
+- ![pic2-git-assignment](https://github.com/user-attachments/assets/c805ae95-3d0a-472b-869f-a8a4c8c0f332)
+
+
 
 ### 3️⃣ **Geometry Calculator with Git Stash**
 
